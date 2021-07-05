@@ -8,6 +8,9 @@ namespace AstarExample
 
         static void Main(string[] args)
         {
+            Board board = new Board();
+            board.Initialize(25);
+
             Console.CursorVisible = false;
 
             int lastTick = 0;
@@ -30,6 +33,8 @@ namespace AstarExample
 
                 #region Render
                 Console.SetCursorPosition(0, 0);
+
+                board.Render();
                 #endregion
             }
         }
