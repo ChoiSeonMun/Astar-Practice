@@ -20,13 +20,15 @@ namespace AstarExample
         public int DestC { get; private set; }
 
         private Random _rand = new Random();
-
-        public void Initialize(int size)
+        private Player _player;
+        public void Initialize(int size, Player player)
         {
             Tiles = new TileType[size, size];
             Size = size;
             DestR = Size - 2;
             DestC = size - 2;
+
+            _player = player;
 
             int prop = _rand.Next(0, 2);
             if (prop == 0)
@@ -46,7 +48,11 @@ namespace AstarExample
             {
                 for (int c = 0; c < Size; ++c)
                 {
-                    if (r == DestR && c == DestC)
+                    if (r == _player.PosR && c == _player.PosC)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                    }
+                    else if (r == DestR && c == DestC)
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
                     }
