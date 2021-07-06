@@ -170,6 +170,11 @@ namespace AstarExample
         {
             if (_moveIndex == _postions.Count)
             {
+                _moveIndex = 0;
+                _postions.Clear();
+                _board.Initialize(_board.Size, this);
+                Initialize(1, 1, _board);
+
                 return;
             }
 
