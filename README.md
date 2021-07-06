@@ -1,6 +1,8 @@
 # Astar-Practice
 This project is simple console app to implement A* Algorithm which is a pathfinding algorithm. It contains simple game loop, maze generation algorithm([Binary Tree Algorithm](http://weblog.jamisbuck.org/2011/2/1/maze-generation-binary-tree-algorithm), [Sidewinder Algorithm](http://weblog.jamisbuck.org/2011/2/3/maze-generation-sidewinder-algorithm)) and A* algorithm.
 
+![GIF](./Animation.gif)
+
 # Environment
 .NET Core 3.1 / Visual Studio 2019
 
