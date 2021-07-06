@@ -30,6 +30,7 @@ namespace AstarExample
                 #endregion
 
                 #region Update
+                player.Update(deltaTick);
                 #endregion
 
                 #region Render
@@ -39,5 +40,6 @@ namespace AstarExample
                 #endregion
             }
         }
+
     }
 }

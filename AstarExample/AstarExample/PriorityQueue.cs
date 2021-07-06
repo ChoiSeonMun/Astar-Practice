@@ -72,6 +72,6 @@ namespace AstarExample
             }
         }
 
-
+        public void Clear() => _heap.Clear();
     }
 }
